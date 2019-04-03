@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class ArrayListDemo {
+	
+	public static void main(String[] args) {
+
+List <String>fruits=new ArrayList<String>();
+     
+
+  fruits.add("Apple");
+  fruits.add("Mango");
+  fruits.add("Guava");
+  fruits.add("Papaya");
+  fruits.add("orange");
+  fruits.add("Apple");
+
+
+
+	//enhance for each loop
+  
+	  
+	 for(String  temp:fruits){
+		 
+		 System.out.println(temp);}
+	 
+	 
+	 
+		 
+	Iterator<String>p=fruits.iterator();
+	
+	while(p.hasNext()){
+		String pack=p.next();
+		System.out.println(pack);}
+	
+	}}	
+	
+	
+		
+		
+		
+		

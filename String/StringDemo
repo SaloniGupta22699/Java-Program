@@ -1,0 +1,87 @@
+import java.util.*;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner scan=new Scanner (System.in);
+		
+  
+
+String s1="my name is saloni gupta";
+String s2="i  am learning core java";
+
+
+
+  char arr[]={'h','e','l','l','o'};
+  
+  String s3=new String(arr);
+  
+ System.out.println("the first string is"+" "+s1);
+ System.out.println("the second string is"+" "+s2);
+ System.out.println("the third string is"+" "+s3);
+  
+  
+System.out.println("the length of the first string is s1="+s1.length());  
+System.out.println("the length of the second string is s2= "+s2.length());
+System.out.println("the length of the third string is s3="+s3.length());
+
+	
+	
+System.out.println("s1 and s2 joined ="+s1.concat(s2));	
+	
+System.out.println(s1+"from "+s3);	
+System.out.println(s3+" "+s2);
+	
+	
+	boolean b=s1.contains("saloni");
+	if(b){
+		System.out.println("saloni is present in this string");
+}
+	else {
+		System.out.println("saloni is not present in this string");
+	}
+	
+	boolean x=s2.startsWith("i");
+	
+	if(x){
+		System.out.println("s2 starts with i");
+	}
+
+	else{
+		System.out.println("s2 does not starts with i");
+	}
+	
+	
+	boolean z=s3.endsWith("o");
+	if(z)
+	{
+		System.out.println("hello is containing");
+	}
+	
+	else {
+		System.out.println("hello is not containg");
+	}
+	
+	
+String 	p=s1.substring(0,7);
+
+String q=s2.substring(0,7);
+	
+	
+	
+System.out.println(p+q);	
+	
+	
+	
+System.out.println("upper s1="+s1.toUpperCase());
+
+System.out.println("lower s1="+s1.toLowerCase());
+	
+	
+
+	
+	
+	}
+
+}

@@ -1,0 +1,20 @@
+/* Java Program Example - Print Date and Time */
+		
+import java.util.*;
+import java.text.*;
+
+public class Test
+{
+   public static void main(String args[])
+   {
+      Date dNow = new Date( );
+      
+      SimpleDateFormat ft1 = new SimpleDateFormat ("dd/MM/yyyy");
+      SimpleDateFormat ft2 = new SimpleDateFormat("E");
+      SimpleDateFormat ft3 = new SimpleDateFormat("hh:mm:ss a");
+      
+      System.out.println("The Current Date is " + ft1.format(dNow));
+      System.out.println("Today is " + ft2.format(dNow));
+      System.out.println("The Current Time is " + ft3.format(dNow));
+   }
+}

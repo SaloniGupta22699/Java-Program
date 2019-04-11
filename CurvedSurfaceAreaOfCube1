@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+public class CurvedSurfaceAreaOfCube1 
+{
+      
+   public static void main(String args[]) 
+    {   
+       
+	double side=Double.parseDouble(args[0]);
+	
+        double  v=4*side*side;
+ 
+        System.out.println("CurvedSurfaceArea Of Cube is:" +v);
+       
+ 
+       
+          
+   }
+}

@@ -1,0 +1,55 @@
+import java.util.concurrent.TimeUnit;
+3
+import org.openqa.selenium.By;
+4
+import org.openqa.selenium.WebDriver;
+5
+import org.openqa.selenium.WebElement;
+6
+import org.openqa.selenium.chrome.ChromeDriver;
+7
+import org.openqa.selenium.chrome.ChromeOptions;
+8
+import org.openqa.selenium.support.ui.ExpectedConditions;
+9
+import org.openqa.selenium.support.ui.WebDriverWait;
+10
+ 
+11
+public class explicitWaitConditionCheck {
+12
+ 
+13
+           public static void main(String[] args) {
+14
+                    // TODO Auto-generated method stub
+15
+                    System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\chromedriver.exe");
+16
+                   ChromeOptions options = new ChromeOptions();
+17
+                   options.addArguments("--disable-arguments");
+18
+                   WebDriver driver = new ChromeDriver();
+19
+                   driver.manage().window().maximize();
+20
+                   driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+21
+                   driver.navigate().to("https://www.google.com");
+22
+                   WebElement element = driver.findElement(By.name("q"));
+23
+                    element.sendKeys("Testing");
+24
+                    element.submit();
+25
+                    WebDriverWait wait = new WebDriverWait(driver, 20);
+26
+ 
+27
+                     WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Software testing - Wikipedia")));
+28
+element2.click();
+29
+}}

@@ -1,0 +1,53 @@
+import java.util.concurrent.TimeUnit;
+4
+ 
+5
+import org.openqa.selenium.By;
+6
+import org.openqa.selenium.JavascriptExecutor;
+7
+import org.openqa.selenium.Keys;
+8
+import org.openqa.selenium.WebDriver;
+9
+import org.openqa.selenium.WebElement;
+10
+import org.openqa.selenium.chrome.ChromeDriver;
+11
+ 
+12
+public class ScrollDown {
+13
+ 
+14
+          public static void main(String[] args) {
+15
+                   // TODO Auto-generated method stub
+16
+                   System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\chromedriver.exe");
+17
+                   WebDriver driver = new ChromeDriver();
+18
+                   JavascriptExecutor js = (JavascriptExecutor) driver;
+19
+                   driver.manage().window().maximize();
+20
+                   driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+21
+                   driver.get("https://www.google.com");
+22
+                   WebElement element = driver.findElement(By.name("q"));
+23
+                   element.sendKeys("SoftwareTestingHelp");
+24
+                   element.sendKeys(Keys.ENTER);
+25
+                    js.executeScript("window.scrollBy(0,1000)");
+26
+ 
+27
+}
+28
+ 
+29
+}

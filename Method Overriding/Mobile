@@ -1,0 +1,11 @@
+
+public class Mobile {
+	String color="white";
+	public void display(){
+		System.out.println("Mobile simple display!!!!!!!!!!");
+	}
+	
+	public void call(){
+		System.out.println("Connecting to the user!!!!!!!!!!");
+	}
+}

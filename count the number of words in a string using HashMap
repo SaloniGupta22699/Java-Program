@@ -1,0 +1,43 @@
+import java.util.HashMap;
+2
+ 
+3
+public class FinalCountWords {
+4
+ 
+5
+    public static void main(String[] args) {
+6
+        // TODO Auto-generated method stub
+7
+        String str = "This this is is done by Saket Saket";
+8
+        String[] split = str.split(" ");
+9
+        HashMap<String,Integer> map = new HashMap<String,Integer>();
+10
+        for (int i=0; i<split.length-1; i++) {
+11
+            if (map.containsKey(split[i])) {
+12
+                int count = map.get(split[i]);
+13
+                map.put(split[i], count+1);
+14
+            }
+15
+            else {
+16
+                map.put(split[i], 1);
+17
+            }
+18
+        }
+19
+        System.out.println(map);
+20
+    }
+21
+ 
+22
+}

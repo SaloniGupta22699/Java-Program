@@ -1,0 +1,39 @@
+import java.util.Scanner;
+2
+ 
+3
+public class SwapTwoNumbers {
+4
+ 
+5
+    public static void main(String[] args) {
+6
+        // TODO Auto-generated method stub
+7
+        int x, y, temp;
+8
+        System.out.println("Enter x and y");
+9
+        Scanner in = new Scanner(System.in);
+10
+        x = in.nextInt();
+11
+        y = in.nextInt();
+12
+        System.out.println("Before Swapping" + x + y);
+13
+        temp = x;
+14
+        x = y;
+15
+        y = temp;
+16
+        System.out.println("After Swapping" + x + y);
+17
+         
+18
+    }
+19
+ 
+20
+}

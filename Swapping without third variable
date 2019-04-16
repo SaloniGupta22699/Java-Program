@@ -1,0 +1,45 @@
+import java.util.Scanner;
+2
+  
+3
+class SwapTwoNumberWithoutThirdVariable
+4
+{
+5
+   public static void main(String args[])
+6
+   {
+7
+      int x, y;
+8
+      System.out.println("Enter x and y");
+9
+      Scanner in = new Scanner(System.in);
+10
+  
+11
+      x = in.nextInt();
+12
+      y = in.nextInt();
+13
+  
+14
+      System.out.println("Before Swapping\nx = "+x+"\ny = "+y);
+15
+  
+16
+      x = x + y;
+17
+      y = x - y;
+18
+      x = x - y;
+19
+  
+20
+      System.out.println("After Swapping without third variable\nx = "+x+"\ny = "+y);
+21
+   }
+22
+}
+
+
